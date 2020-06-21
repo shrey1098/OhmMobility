@@ -21,13 +21,6 @@ header img {
 
 }
 
-#showcase header h1 {
-  margin-left: 23vh;
-  margin-top: 8vh;
-  position: relative;
-  font-size: 5vh;
-  font-family: 'Work Sans', sans-serif;
-}
 
 
 /* Section */
@@ -67,7 +60,8 @@ header img {
 
 
 #showcase .container {
-  margin-top: 32vh;
+  margin-top: 43vh;
+ 
   
 
 }
@@ -91,7 +85,7 @@ ul li{
 }
 
 img{
-  transition: ease-in-out 900ms;
+  transition: ease-in-out 500ms;
   
 }
 a{
@@ -211,8 +205,7 @@ footer .footer-bottom {
     float: left;
     margin-left: 4vh;
     margin-top: 4vh;
-    height: 100px;
-    width: 100px;
+
   }
 
   #showcase header h1{
@@ -243,8 +236,7 @@ footer .footer-bottom {
       float: left;
       margin-left: 4vh;
       margin-top: 4vh;
-      height: 100px;
-      width: 100px;
+
     }
     
   #showcase .container {
@@ -271,8 +263,7 @@ footer .footer-bottom {
 /* Mobile */
 @media screen and (max-width: 580px) {
   header img{
-    height: 70px;
-    width: 70px;
+    width: 250px;
     margin-left: 2vh;
   }
   #showcase header h1 {
@@ -327,12 +318,28 @@ footer .footer-bottom {
   
   }
   li{
-    margin-top: 5vh;
+    
     
     margin-right: 5vh;
     
   }
- 
+
+  li.call, li.linkedin{
+    margin-top: 4vh;
+  }
+  
+  img{
+    transition: ease-in-out 500ms;
+    
+  }
+
+  ul li a:hover img{
+   width: 36%;
+  
+    
+    
+  }
+  
 
 }
 @media only screen and
