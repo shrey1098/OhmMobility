@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
-/* CSS Variables */
 
 body {
   font-family: 'Arial', sans-serif;
@@ -13,17 +12,14 @@ header{
   display: inline;
 
 }
-
 header img {
   float: left;
   margin-left: 4vh;
   margin-top: 4vh;
+  width: 50vh;
 
 }
 
-
-
-/* Section */
 .section {
   padding: 2rem 0;
 }
@@ -45,8 +41,6 @@ header img {
   
 }
 
-
-/* Showcase */
 #showcase {
   margin: 0;
   padding: 0;
@@ -56,53 +50,32 @@ header img {
   position: relative;
   overflow-y: hidden;
 }
-
-
-
 #showcase .container {
   margin-top: 43vh;
- 
-  
-
 }
-
 #showcase h1 {
   font-size: 5rem;
   font-weight: 700;
-  
 }
 ul{
   list-style: none;
   display: flex;
-  
   margin-top: 10vh;
 }
 ul li{
   display: inline-block;
   flex:1%;
-  ;
-  
 }
-
 img{
   transition: ease-in-out 500ms;
-  
 }
 a{
   text-decoration: none;
   color: #444;
-  
 }
-
 ul li a:hover img{
  width: 22%;
-
-  
-  
 }
-
-
-/* Footer */
 footer{
   background-color: #333;
   margin-top: 5vh;
@@ -115,119 +88,96 @@ footer .footer-cols {
   text-align: left;
   font-size: 14px;
 }
-
 footer .footer-cols ul {
   list-style: none;
 }
-
 footer .footer-cols ul li:first-child {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
   border-bottom: #444 solid 1px;
   margin-bottom: 1rem;
 }
-
 footer .footer-bottom {
   background: #333;
   padding: 1rem;
 }
-
-/* Utility Classes */
 .container {
-  max-width: 1180px;
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
 }
-
+#video .container{
+  margin-left: -40px;
+}
 .lead {
   font-size: 1.3rem;
 }
-
 .text-center {
   text-align: center;
 }
-
-/* Buttons */
 .btn {
   padding: 1rem;
   color: #fff;
   display: inline-block;
 }
-
 .btn-primary {
   background: var(--primary-color);
 }
-
 .btn-primary:hover {
   background: var(--primary-color-hover);
 }
-
 .btn-secondary {
   background: var(--secondary-color);
 }
-
 .btn-secondary:hover {
   background: var(--secondary-color-hover);
 }
-
-/* Text colors */
 .text-primary {
   color: var(--primary-color);
 }
-
 .text-secondary {
   color: var(--secondary-color);
 }
-
 .text-light {
   color: var(--light-color);
 }
-
 .bg-light {
   background: var(--light-color);
   color: #333;
 }
-
 .mb {
   margin-bottom: 1rem;
 }
-
 .mt {
   margin-top: 1rem;
 }
-
-/* MDPI */
 @media screen and (max-width: 1280px)and
 (min-width:1000px){
-  
   header img {
     float: left;
     margin-left: 4vh;
     margin-top: 4vh;
 
   }
-
   #showcase header h1{
     margin-left: 20vh;
     position: relative;
     font-size: 6vh;
     font-family: 'Work Sans', sans-serif;
     margin-top: 55px;
-  
   }
-
   #showcase h1 {
     font-size: 4rem;
     font-weight: 700;
-    
   }
-
   #showcase .container {
     width: 130vh;
-  
     }
-  
+}
+@media screen and (width: 1024px){
+  #showcase .container{
+    width: 70vh
+  }
 }
 @media only screen and
   (max-width: 1366px)and
@@ -236,19 +186,14 @@ footer .footer-bottom {
       float: left;
       margin-left: 4vh;
       margin-top: 4vh;
-
     }
-    
   #showcase .container {
     width: 135vh;
-    
     }
   #showcase h1 {
     font-size: 4rem;
     font-weight: 700;
-    
   }
-
   #showcase header h1 {
     margin-left: 22vh;
     margin-top: 8vh;
@@ -256,44 +201,25 @@ footer .footer-bottom {
     font-size: 6vh;
     font-family: 'Work Sans', sans-serif;
   }
-
   }
-
-
-/* Mobile */
 @media screen and (max-width: 580px) {
   header img{
     width: 250px;
     margin-left: 2vh;
-  }
-  #showcase header h1 {
-    margin-left: 15vh;
-    margin-top: 7vh;
-    position: relative;
-    letter-spacing: .2px;
-    font-size: 3vh;
+    margin-top: 2vh;
   }
   .hide-on-small {
     display: none;
   }
-
   #showcase {
     height: 100vh;
-    
-    
   }
-
   #showcase .container {
     vertical-align: middle;
-    
-    
-    
   }
   #showcase .section-main container h1{
     text-align: center;
-    
   }
-
   #showcase h1 {
     font-size: 2.5rem;
   }
@@ -301,50 +227,30 @@ footer .footer-bottom {
     font-size: 2rem;
     text-align: center;
     width: 100%;
-    
-   
+    margin-left: 2vh;
   }
-
- 
   .underline{
     text-decoration-line: underline;
     text-decoration-color: #006241;
-    
   }
   ul{
   display: grid;
-  
   text-align: center;
-  
   }
-  li{
-    
-    
-    margin-right: 5vh;
-    
-  }
-
   li.call, li.linkedin{
     margin-top: 4vh;
   }
-  
   img{
     transition: ease-in-out 500ms;
-    
   }
-
   ul li a:hover img{
    width: 36%;
-  
-    
-    
   }
-  
-
 }
 @media only screen and
   (width: 360px)and
-  (height:640px){#showcase h1 {
+  (height:640px){
+    #showcase h1 {
     font-size: 2rem;
   }
-  }
+}
