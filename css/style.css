@@ -57,6 +57,10 @@ header img {
   font-size: 5rem;
   font-weight: 700;
 }
+#showcase h2{
+  margin-top: 25vh;
+  font-size: 2rem;
+}
 ul{
   list-style: none;
   display: flex;
@@ -222,6 +226,10 @@ footer .footer-bottom {
   }
   #showcase h1 {
     font-size: 2.5rem;
+  }
+  #showcase h2{
+    margin-top: 30vh;
+    font-size: 1.5rem;
   }
   .section h3 {
     font-size: 2rem;
