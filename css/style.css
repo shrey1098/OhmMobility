@@ -262,3 +262,12 @@ footer .footer-bottom {
     font-size: 2rem;
   }
 }
+@media only screen and
+  (width: 375px)and
+  (height:667px){
+    #showcase h2{
+    margin-top: 17vh;
+    font-size: 1.5rem;
+  }
+}
+
