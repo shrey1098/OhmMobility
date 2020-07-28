@@ -7,8 +7,137 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="icon"  href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      padding:0;
+      margin:0;
+    }
+    div.background_logo{
+      background-color: #006241;
+      height: 33vh;
+      position: relative;
+    }
+    div.img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    div.img img{
+      width: 20vh;
+    }
+    p.head{
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 25px;
+    }
+    div.content{
+      text-align: left;
+      color: #333333;
+      padding: 5vh;
+      font-size: 1rem;
+    }
+    .desktop{
+      display: none;
+    }
+    .footer{
+      background-color: #006241;
+    }
+    .ty{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 6vh;
+    }
+    .links{
+      text-align: center;
+    }
+    .links_list{
+      list-style: none;
+      margin-left: -4vh;
+    }
+    .links_list li{
+      margin-top: 3vh;
+    }
+    .links_list li a{
+      color: white ;
+    }
+
+    @media screen and (max-width: 390px){
+      p.head{
+        padding: 15px;
+        font-size: 1.4rem;
+      }
+    }
+    @media screen and (min-width: 1000px){
+      .links_list{
+        display: flex;
+      }
+      .links_list li{
+        flex:1;
+      }
+    }
+    @media screen and (min-width: 1200px){
+      div.mobile{
+        display: none;
+      }
+      .desktop{
+        display: flex;
+      }
+      .writeup{
+        flex:2;
+      }
+      div.background_logo{
+        flex: 2;
+        background-color: #006241;
+        height: 100vh;
+        position: relative;
+      }
+      div.img img{
+        width: 40vh;
+      }
+      p.head{
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 25px;
+      }
+      div.content{
+        text-align: left;
+        color: #333333;
+        padding: 5vh;
+        font-size: 1.5rem;
+      }
+    }
+    @media screen and (width:1366px)
+    {
+      div.content{
+        text-align: left;
+        color: #333333;
+        padding: 5vh;
+        font-size: 1.3rem;
+      }
+    }
+    @media screen and (min-width: 1440px){
+      p.head{
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 5vh;
+      }
+      div.content{
+        text-align: left;
+        color: #333333;
+        padding: 7vh;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
   <title>Ohm Mobility</title>
 </head>
 <body>
@@ -20,37 +149,81 @@
     <div class="section-main container">
       <h1>Enabling Clean, Connected &
         Shared Mobility</h1>
-
-        <h2>Coming Soon</h2>
+      <a href="#next" class="angle-down"><img src="img/angle-down.svg" alt="angle-down"></a>
     </div>
   </div>
 
-  
+  <div class="co" id="next">
+    <div class="mobile">
+      <p class="head" style="color: #006241">The Future of Transportation <br> is Clean, Connected & Shared</p>
+      <div class="background_logo container-fluid">
+        <div class="img">
+          <img src="img/logo_big.svg" alt="logo_big">
+        </div>
+      </div>
+      <div class="content">
+        <p> We believe the transportation Industry is at the brink of large scale disruption. Most major
+          cities struggling with air pollution, traffic congestion, expanding population and the resultant collapse of urban
+          transport infrastructure. Under-utilization of vehicles & disproportionate time spent in traffic demand sustainable transport solutions.</p>
+        <p>We are enabling this transition.</p>
+        <p>Ohm Mobility is building a technology platform to enable clean, connected & shared transportation that will revolutionise urban transportation.</p>
+      </div>
+    </div>
+
+    <div class="desktop">
+      <div class="writeup">
+        <p class="head" style="color: #006241">The Future of Transportation <br> is Clean, Connected & Shared</p>
+          <div class="content">
+            <p> We believe the transportation Industry is at the brink of large scale disruption. Most major
+              cities struggling with air pollution, traffic congestion, expanding population and the resultant collapse of urban
+              transport infrastructure. Under-utilization of vehicles & disproportionate time spent in traffic demand sustainable transport solutions.</p>
+            <br>
+            <p>We are enabling this transition.</p>
+            <br>
+            <p>Ohm Mobility is building a technology platform to enable clean, connected & shared transportation that will revolutionise urban transportation.</p>
+          </div>
+      </div>
+      <div class="background_logo container-fluid">
+        <div class="img">
+          <img src="img/logo_big.svg" alt="logo_big">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <section id="video" class="section bg-light">
     <div class="container">
       <h3><u class="underline">Get In Touch</u></h3>
       <ul class="contact">
-        <li><a href="mailto:contact@ohmmobility.com?"><img class="mail" src="img/mail.svg"><p>contact@ohmmobility.com</p></a></li>
-        <li class="call"><a href="tel:+918867037812"><img class="call" src="img/Call.svg"><p>+918867037812</p></a></li>
-        <li class="linkedin"><a href="https://bit.ly/3fIU4qA"><img class="linkedin" src="img/linkedin.svg"><p>https://bit.ly/3fIU4qA</p></a></li>
+        <li><a href="mailto:contact@ohmmobility.com"><img class="mail" src="img/mail.svg" alt="mail"><p>contact@ohmmobility.com</p></a></li>
+        <li class="call"><a href="tel:+918867037812"><img class="call" src="img/Call.svg" alt="call"><p>+918867037812</p></a></li>
+        <li class="linkedin"><a href="https://bit.ly/3fIU4qA"><img class="linkedin" src="img/linkedin.svg" alt="LinkedIn"><p>https://bit.ly/3fIU4qA</p></a></li>
       </ul>
-   </div>
+    </div>
   </section>
 
-  <footer>
-    <div class="container">
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      Copyright &copy; 2020 Ohm Mobility
-    </div>
-  </footer>
 
-
+  <div class="footer container-fluid card-footer">
+    <div class="ty">
+      <p>Thank You!</p>
+    </div>
+    <div class="links container-fluid">
+      <ul class="links_list">
+        <li>
+          <a href="privacy.html">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="terms.html">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="refunds.html">Refunds & Cancellation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-
 </body>
-
 </html>
